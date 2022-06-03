@@ -1,0 +1,44 @@
+/* 
+
+BIENVENIDOS Y BIENVENIDAS
+TRATENME CON CARIÑO Y PRIORICEN LA ORGANIZACIÓN
+
+*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+/* ESTILOS GENERALES */
+body {
+    background-color: rgb(241, 241, 241);
+    font-family: 'Oswald', sans-serif;
+}
+/* ESTILOS DEL HEADER */ 
+
+.header-background {
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4auX__ciipKXe5Nc23vhTYYa4deqZnnA8HA&usqp=CAU');
+    background-size: contain;
+}
+
+.img-logo {
+    width:50px;
+}
+
+#nav-header {
+    list-style-type: none;
+}
+
+.a-header {
+    color:#000000;
+    text-decoration:none;
+}
+
+.textos {
+    color:#FF5733;
+}
+
+/* ESTILOS DEL MAIN */ 
+
+.img-home {
+
+}
+
