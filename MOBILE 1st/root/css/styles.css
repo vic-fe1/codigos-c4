@@ -1,0 +1,70 @@
+/* FLEX STYLES */
+/* VIEWPORT MOBILE */ 
+
+.flex-around {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+/* HEADER STYLES */ 
+
+
+
+header {
+    background: rgb(110,159,156);
+    background: linear-gradient(90deg, rgba(110,159,156,1) 0%, rgba(9,109,121,0.9556197478991597) 0%, rgba(0,212,255,1) 100%);
+    height: 13.5vh;
+}
+
+.img-logo {
+    width: 55px;
+  
+}
+
+.nav-header {
+    display: none;
+}
+
+.fa-burger {
+   font-size: 2rem;
+   
+}
+
+.main-home {
+    flex-direction: column;
+    justify-content: center;
+    height: 40vh;
+    background-color: rgb(26, 26, 26);
+    color: rgb(233, 241, 248);
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 3px;
+}
+
+
+/* MEDIA QUERIES */ 
+
+/* PANTALLAS A PARTIR DE 500px */ 
+
+@media (min-width: 500px) {
+
+    
+
+}
+
+@media (min-width: 700px) {
+
+    .fa-burger {
+        display: none;
+    }
+
+    .nav-header {
+        display: block;
+        width: 50%;
+    }
+
+}
