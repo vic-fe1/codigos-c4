@@ -1,0 +1,71 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+article {
+    width: 50%;
+    height: 60%;
+    margin: 5% 25%;
+    border: 3px solid #AAA;
+    background-color: #ffe5c6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* PROFE MI VIEWPORT ES DE 1200px */ 
+
+
+
+h4 {
+    
+    animation: aparecer 1s linear; 
+    animation-iteration-count: 1;
+}
+
+/* ACA VOY A CREAR UNA ANIMACION */ 
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+       transform: translateX(200px);
+    }
+
+    50% {
+        opacity: 0.3;
+        transform:translateX(100px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+
+
+button{
+    width: 200px;
+    height: 60px;
+    border-radius: 5px;
+    background-color: #AAA;
+    border: 3px solid #AAA;
+    transition: all 0.4s linear; 
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: #a6ffa6;
+    border: 3px solid #666666;
+    transform: translateY(10px);
+}
+
+
+button:active + div {
+    animation: aparecer 1s linear; 
+}
