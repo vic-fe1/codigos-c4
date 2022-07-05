@@ -1,0 +1,69 @@
+/* VARIABLES */ 
+
+/* TODO LO QUE SEA UN VALOR DE UNA PROPIEDAD 
+POR EJEMPLO
+COLOR: VALOR;
+FONT-SIZE: VALOR;
+BORDER-RADIUS; VALOR;
+*/
+
+/* COLORES EN LA WEB: 70% 20% 10% */
+$color-principal: #1100ad; 
+$color-secundario: #FFF;
+$color-alternativo: #000;
+
+/* NESTING y uso de @extend -> ME TRAE TODOS LOS ESTILOS DE QUIEN LLAMO */ 
+
+/* COMPONENTE BOTON */ 
+
+main {
+    background-color: rgb(255, 248, 146);
+    height: 100vh;
+}
+
+.boton {
+    width: 250px;
+    height: 55px;
+    margin: 20px 20px;
+    border-radius: 10px;
+    border:none;
+    transition: all 0.5s linear;
+    &:hover {
+        transform: translateY(5px);
+        cursor: pointer;
+        border-bottom: 3px solid $color-alternativo;
+    }
+    /*NESTING*/
+    &-principal {
+        @extend .boton;
+        background-color: $color-principal;
+    }
+    &-secundario{
+        @extend .boton;
+        background-color: $color-secundario;
+        color: $color-alternativo;
+    }
+    &-alternativo {
+        @extend .boton;
+        border: 3px solid $color-alternativo;
+    }
+}
+
+/* ARMAR UN CONTENEDOR FLEX USANDO NESTING PARA ACOMODAR LOS BOTONES.
+DEBE SEGUIR LA SIGUIENTE LOGICA:
+
+.flex-column/row-space-around/between;
+
+.flex-row-space-around;
+
+.flex-column-space-between; 
+
+align-items*/
+
+.flex {
+    display: flex;
+    &-row {
+        @extend .flex;
+    }
+}
+
