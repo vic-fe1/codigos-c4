@@ -1,0 +1,21 @@
+@mixin texto($size, $color, $weight) {
+  font-size: $size;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.5;
+  text-decoration: none;
+  color: $color;
+  font-style: normal;
+  font-weight: $weight;
+}
+
+/* EL MIXIN DEBE REUTILIZARSE EN EL MISMO ARCHIVO: 
+CON @INCLUDE AÑADO AL MIXIN A MI CLASE. */
+
+.texto {
+  &-normal {
+    @include texto(1rem,400);
+  }
+  &-titulos {
+    @include texto(2.5rem, #000, 600);
+  }
+}

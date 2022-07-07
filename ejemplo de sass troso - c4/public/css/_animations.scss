@@ -1,0 +1,45 @@
+/* SINK */
+
+
+@keyframes sink {
+  from {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+
+  100% {
+    transform: translateY(0);  
+  }
+}
+
+.sink {
+  &:hover {
+    animation: sink 1s linear;
+    animation-iteration-count: 1;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+
+}
+
+.slide-right {
+  &:hover {
+    animation: slide-right 1s linear;
+  }
+}
+

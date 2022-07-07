@@ -1,0 +1,112 @@
+@charset "UTF-8";
+.container-padre {
+  display: flex;
+  margin: 10px;
+  justify-content: center;
+  align-items: center;
+}
+.container-padre .card, .container-padre .card-premium {
+  background-color: rgb(121, 121, 121);
+  color: rgb(8, 8, 61);
+  height: 400px;
+  width: 300px;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #c7c7c7;
+  box-shadow: 20px 20px 60px #a9a9a9, -20px -20px 60px #e5e5e5;
+  transition: all 0.75s;
+}
+.container-padre .card-premium {
+  background: rgb(8, 8, 61);
+  color: rgb(121, 121, 121);
+}
+
+/* SINK */
+@-webkit-keyframes sink {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes sink {
+  from {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.sink:hover {
+  -webkit-animation: sink 1s linear;
+          animation: sink 1s linear;
+  -webkit-animation-iteration-count: 1;
+          animation-iteration-count: 1;
+}
+
+@-webkit-keyframes slide-right {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-right {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+.slide-right:hover {
+  -webkit-animation: slide-right 1s linear;
+          animation: slide-right 1s linear;
+}
+
+/* EL MIXIN DEBE REUTILIZARSE EN EL MISMO ARCHIVO: 
+CON @INCLUDE AÑADO AL MIXIN A MI CLASE. */
+.texto-normal {
+  font-size: 1rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+}
+.texto-titulos {
+  font-size: 2.5rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  line-height: 1.5;
+  text-decoration: none;
+  color: #000;
+  font-style: normal;
+  font-weight: 600;
+}
+
+/* USO DE PARTIALS -> BLOQUE DE CODIGO QUE YO PIENSO REUTILIZAR EN OTROS PROYECTOS
+EL ARCHIVO SE ESCRIBE CON UN "_"ADELANTE DEL NOMBRE */
+/* TRAE EL CODIGO DE FLEXCARDS Y ANIMATIONS */
+/* KISS - Keep it simple, stupid! */
+/* D.R.Y -> Don't repeat yourself - No repetirme */
+/* SEPARATION OF CONCERNS -> SEPARAR CADA COSA SEGUN SU FUNCION */
+body {
+  background-color: #c7c7c7;
+}/*# sourceMappingURL=mainsass.css.map */
